@@ -1,0 +1,15 @@
+diff a/HellsBells/Assets/HosiManager.cs b/HellsBells/Assets/HosiManager.cs	(rejected hunks)
+@@ -6,8 +6,11 @@
+ {
+     private bool IsKey;
+     private GameObject playerObject;
+-    //[SerializeField]
+-    //private ItemFlag keyItem;
++    [SerializeField]
++    private Item keyItem;
++
++    [SerializeField]
++    private TextWriter textWriter;
+ 
+     [SerializeField]
+     private float size;

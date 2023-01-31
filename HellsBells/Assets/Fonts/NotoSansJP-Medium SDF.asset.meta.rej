@@ -1,0 +1,10 @@
+diff a/HellsBells/Assets/Fonts/NotoSansJP-Medium SDF.asset.meta b/HellsBells/Assets/Fonts/NotoSansJP-Medium SDF.asset.meta	(rejected hunks)
+@@ -0,0 +1,8 @@
++fileFormatVersion: 2
++guid: 1ffe5cc8d56eb1e4fa29dc146a8e687a
++NativeFormatImporter:
++  externalObjects: {}
++  mainObjectFileID: 11400000
++  userData: 
++  assetBundleName: 
++  assetBundleVariant: 

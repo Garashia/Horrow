@@ -46,7 +46,7 @@ public class EnemyManager : MonoBehaviour
         }
     }
 
-    public void setOikakeFlag(bool oikakeFlag)
+    public void SetOikakeFlag(bool oikakeFlag)
     {
         oikake = oikakeFlag;
     }

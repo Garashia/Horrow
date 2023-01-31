@@ -6,8 +6,11 @@ public class HosiManager : MonoBehaviour
 {
     private bool IsKey;
     private GameObject playerObject;
-    //[SerializeField]
-    //private ItemFlag keyItem;
+    [SerializeField]
+    private Item keyItem;
+
+    [SerializeField]
+    private TextWriter textWriter;
 
     [SerializeField]
     private float size;
@@ -30,8 +33,14 @@ public class HosiManager : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                //Destroy(gameObject);
-
+                //
+                textWriter.RenderMessage();
+                //if(textWriter.IsAlreadyRead())
+                //{
+                    keyItem.itemGetFlag = true;
+                    //textWriter.SetAlreadyRead(false);
+                    Destroy(gameObject);
+                //}
                 //ItemFlag.SetItem(true, ItemFlag.Item.Key);
                 //keyItem.SetItem(true, ItemFlag.Item.Key);
             }
