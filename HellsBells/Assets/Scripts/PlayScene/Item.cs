@@ -8,6 +8,7 @@ public class Item : ScriptableObject
     public Type type; // í—Ş
     public String infomation; // î•ñ
     public Sprite sprite; // ‰æ‘œ(’Ç‰Á)
+    public bool itemGetFlag;
 
     public enum Type
     {
