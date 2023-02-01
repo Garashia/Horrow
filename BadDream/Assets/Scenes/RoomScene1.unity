@@ -798,6 +798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b8a40028340104f98668515e9977fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
+  pos: {x: 0, y: 2}
   notHammer: {fileID: 1667268740}
   haveHammer: {fileID: 1656801191}
   afterBreak: {fileID: 1566620278}
@@ -2306,16 +2308,24 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 788523873541248648, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
+      propertyPath: pos.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 788523873541248648, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
       propertyPath: isDead
       value: 
       objectReference: {fileID: 11400000, guid: 695b9e012e9191847b76f55fee41bf31, type: 2}
+    - target: {fileID: 788523873541248648, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
+      propertyPath: message
+      value: 
+      objectReference: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
     - target: {fileID: 788523873541248648, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
       propertyPath: textWriter
       value: 
       objectReference: {fileID: 1533813057}
     - target: {fileID: 788523873541248650, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
       propertyPath: m_InitialState
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 788523873541248651, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
       propertyPath: m_RootOrder
@@ -2413,6 +2423,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652cc3eba5e776f4b90b26aea6583bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
+  pos: {x: 0, y: 1}
   keyItem: {fileID: 11400000, guid: d4ed485f0f3466c4d85a4562e6f2e8f5, type: 2}
   notKey: {fileID: 1133109641}
   haveKey: {fileID: 1396338239}

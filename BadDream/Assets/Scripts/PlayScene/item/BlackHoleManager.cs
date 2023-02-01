@@ -5,6 +5,12 @@ using UnityEngine;
 public class BlackHoleManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject message;
+    [SerializeField]
+    private Vector2 pos;
+    private bool IsActive;
+
+    [SerializeField]
     private TextWriter noItem;
 
     [SerializeField]
@@ -34,6 +40,9 @@ public class BlackHoleManager : MonoBehaviour
     {
         playerObject = GameObject.FindWithTag("Player");
         IsKey = false;
+        message = Instantiate(message);
+        message.transform.position = new Vector3(gameObject.transform.position.x + pos.x, gameObject.transform.position.y + pos.y, 0.0f);
+        IsActive = true;
     }
 
     // Update is called once per frame
@@ -43,16 +52,21 @@ public class BlackHoleManager : MonoBehaviour
         if (playerObject.transform.position.x - size < transform.position.x &&
             playerObject.transform.position.x + size > transform.position.x)
         {
+            if (IsActive)
+                message.SetActive(true);
+            else
+                message.SetActive(false);
             IsKey = true;
         }
         else
         {
+            message.SetActive(false);
             IsKey = false;
         }
         if (IsKey)
             if (Input.GetKeyDown(KeyCode.Space))
             {
-
+                IsActive = false;
                 if (butteryItem.GetItemFlag())
                 {
                     butteryGet.RenderMessage();
@@ -82,16 +96,26 @@ public class BlackHoleManager : MonoBehaviour
                 }
             }
         if (butteryGet.IsAlreadyRead())
+        {
+            IsActive = true;
             butteryGet.SetAlreadyRead(false);
+        }
         if (hammarGet.IsAlreadyRead())
         {
+            IsActive = true;
             butteryItem.SetItemFlag(true);
             hammarGet.SetAlreadyRead(false);
         }
         if (grassGet.IsAlreadyRead())
+        {
+            IsActive = true;
             grassGet.SetAlreadyRead(false);
+        }
         if (noItem.IsAlreadyRead())
+        {
+            IsActive = true;
             noItem.SetAlreadyRead(false);
+        }
 
 
     }

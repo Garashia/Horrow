@@ -5,6 +5,12 @@ using UnityEngine;
 public class BoxManager : MonoBehaviour
 {
     [SerializeField]
+    private GameObject message;
+    [SerializeField]
+    private Vector2 pos;
+    private bool IsActive;
+
+    [SerializeField]
     private TextWriter notHammer;
     [SerializeField]
     private TextWriter haveHammer;
@@ -39,6 +45,10 @@ public class BoxManager : MonoBehaviour
     {
         playerObject = GameObject.FindWithTag("Player");
         near = false;
+        message = Instantiate(message);
+        message.transform.position = new Vector3(gameObject.transform.position.x + pos.x, gameObject.transform.position.y + pos.y, 0.0f);
+        IsActive = true;
+
     }
 
     // Update is called once per frame
@@ -52,15 +62,23 @@ public class BoxManager : MonoBehaviour
         if (playerObject.transform.position.x - Size < transform.position.x &&
             playerObject.transform.position.x + Size > transform.position.x)
         {
+            if (IsActive)
+                message.SetActive(true);
+            else
+                message.SetActive(false);
+
             near = true;
         }
         else
         {
+            message.SetActive(false);
+
             near = false;
         }
         if (near)
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                IsActive = false;
                 if (flashLifht.GetItemFlag())
                 {
                     afterBreak.RenderMessage();
@@ -76,16 +94,19 @@ public class BoxManager : MonoBehaviour
             }
         if (afterBreak.IsAlreadyRead())
         {
+            IsActive = true;
             afterBreak.SetAlreadyRead(false);
         }
         if (haveHammer.IsAlreadyRead())
         {
+            IsActive = true;
             flashLifht.itemGetFlag = true;
             isBox.isDead = true;
             haveHammer.SetAlreadyRead(false);
         }
         if(notHammer.IsAlreadyRead())
         {
+            IsActive = true;
             notHammer.SetAlreadyRead(false);
         }
 

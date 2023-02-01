@@ -729,6 +729,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4d14fe84efb104ba6eb186f66b1930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
+  pos: {x: 0, y: 1}
   notItem: {fileID: 265909990}
   haveFlashLight: {fileID: 1841456167}
   haveButtery: {fileID: 762855780}

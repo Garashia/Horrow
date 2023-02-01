@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class NotKey : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject message;
+    [SerializeField]
+    private Vector2 pos;
+    private bool IsActive;
     private bool IsKey;
     private GameObject playerObject;
     [SerializeField]
@@ -28,6 +33,9 @@ public class NotKey : MonoBehaviour
     {
         IsKey = false;
         playerObject = GameObject.FindWithTag("Player");
+        message = Instantiate(message);
+        message.transform.position = new Vector3(gameObject.transform.position.x + pos.x, gameObject.transform.position.y + pos.y, 0.0f);
+        IsActive = true;
     }
 
     // Update is called once per frame
@@ -46,28 +54,40 @@ public class NotKey : MonoBehaviour
             if (playerObject.transform.position.x - size < transform.position.x &&
                 playerObject.transform.position.x + size > transform.position.x)
             {
+                if(IsActive)
+                message.SetActive(true);
+                else
+                    message.SetActive(false);
+
                 IsKey = true;
             }
             else
             {
+                message.SetActive(false);
+
                 IsKey = false;
             }
             if(IsKey)
             {
                 if(Input.GetKeyDown(KeyCode.Space))
-                if(keyItem.GetItemFlag())
                 {
-                    haveKey.RenderMessage();
-                }
-                else
-                {
-                    notKey.RenderMessage();
+                    IsActive = false;
+                    if (keyItem.GetItemFlag())
+                    {
+                        haveKey.RenderMessage();
+                    }
+                    else
+                    {
+                        notKey.RenderMessage();
+                    }
+
                 }
 
             }
 
             if(haveKey.IsAlreadyRead())
             {
+                IsActive = true;
                 door.SetActive(true);
                 Destroy(gameObject);
                 isDad.isDead = true;
@@ -75,6 +95,7 @@ public class NotKey : MonoBehaviour
             }
             if(notKey.IsAlreadyRead())
             {
+                IsActive = true;
                 notKey.SetAlreadyRead(false);
             }
         }

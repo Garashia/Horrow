@@ -4,6 +4,12 @@ using UnityEngine;
 
 public class CupManager : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject message;
+    [SerializeField]
+    private Vector2 pos;
+    private bool IsActive;
+
     private bool examie;
 
     [SerializeField]
@@ -19,6 +25,9 @@ public class CupManager : MonoBehaviour
     {
         examie = false;
         playerObject = GameObject.FindWithTag("Player");
+        message = Instantiate(message);
+        message.transform.position = new Vector3(gameObject.transform.position.x + pos.x, gameObject.transform.position.y + pos.y, 0.0f);
+        IsActive = true;
     }
 
     // Update is called once per frame
@@ -28,16 +37,26 @@ public class CupManager : MonoBehaviour
         if (playerObject.transform.position.x - size < transform.position.x &&
             playerObject.transform.position.x + size > transform.position.x)
         {
+            if (IsActive)
+                message.SetActive(true);
+            else
+                message.SetActive(false);
             IsKey = true;
+        }
+        else
+        {
+            message.SetActive(false);
         }
         if (IsKey)
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                IsActive = false;
                 text.RenderMessage();
 
             }
         if (text.IsAlreadyRead())
         {
+            IsActive = true;
             examie = true;
             text.SetAlreadyRead(false);
         }

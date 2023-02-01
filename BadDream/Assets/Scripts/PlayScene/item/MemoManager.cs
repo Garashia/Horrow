@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class MemoManager : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject message;
+    [SerializeField]
+    private Vector2 pos;
+    private bool IsActive;
 
     [SerializeField]
     private GameObject memo;
@@ -22,6 +27,9 @@ public class MemoManager : MonoBehaviour
         playerObject = GameObject.FindWithTag("Player");
         near = false;
         IsMemo = false;
+        message = Instantiate(message);
+        message.transform.position = new Vector3(gameObject.transform.position.x + pos.x, gameObject.transform.position.y + pos.y, 0.0f);
+        IsActive = true;
     }
 
     // Update is called once per frame
@@ -30,32 +38,38 @@ public class MemoManager : MonoBehaviour
         if (playerObject.transform.position.x - size < transform.position.x &&
             playerObject.transform.position.x + size > transform.position.x)
         {
+            if (IsActive)
+                message.SetActive(true);
+            else
+                message.SetActive(false);
             near = true;
         }
         else
         {
+            message.SetActive(false);
             near = false;
         }
 
         if (near)
-        {
-            if (!IsMemo)
+        {                
+            if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
-                    memo.SetActive(true);
-                    IsMemo = true;
-                }
-            }
-            else
-            {
-                if (Input.GetKeyDown(KeyCode.Space))
-                {
 
-                    memo.SetActive(false);
-                    IsMemo = false;
+                if (!IsMemo)
+                {
+                    IsActive = false;
+                     memo.SetActive(true);
+                     IsMemo = true;
+                    
                 }
+                
+                else
+                {
+                    IsActive = true;
+                     memo.SetActive(false);
+                     IsMemo = false;
 
+                }
             }
         }
 

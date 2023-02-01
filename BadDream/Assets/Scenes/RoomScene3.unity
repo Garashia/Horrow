@@ -789,6 +789,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716cff439da72684c86940b990d29443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
+  pos: {x: 0, y: 3}
   memo: {fileID: 1660865047}
   size: 2
 --- !u!1 &650864033
@@ -905,6 +907,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d28280ffec46fa48bf7f5093deecbfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
+  pos: {x: 0, y: 0}
+  text: {fileID: 0}
 --- !u!212 &743936401
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1704,7 +1709,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909389750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23999761, y: 0.04999411, z: -10}
+  m_LocalPosition: {x: 0.23999904, y: 0.04999435, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

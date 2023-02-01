@@ -9,6 +9,7 @@ public class DoorOpen : MonoBehaviour
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
+    private bool IsActive;
 
     [SerializeField]
     private Animator animator = null;
@@ -24,18 +25,16 @@ public class DoorOpen : MonoBehaviour
     private bool flag;
     [SerializeField]
     private PlayableDirector playableDirector;
-    private bool IsActive;
 
     // Start is called before the first frame update
     void Start()
     {
-        IsActive = true;
         this.animator = GetComponent<Animator>();
         playerObject = GameObject.FindWithTag("Player");
         flag = false;
         message = Instantiate(message);
         message.transform.position = new Vector3(gameObject.transform.position.x + pos.x, gameObject.transform.position.y + pos.y, 0.0f);
-
+        IsActive = true;
     }
 
     // Update is called once per frame
@@ -48,6 +47,8 @@ public class DoorOpen : MonoBehaviour
         {
             if (IsActive)
                 message.SetActive(true);
+            else
+                message.SetActive(false);
             if (Input.GetKey(KeyCode.Space))
             {
                 message.SetActive(false);
