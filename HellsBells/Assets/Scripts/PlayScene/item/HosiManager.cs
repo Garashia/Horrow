@@ -29,21 +29,33 @@ public class HosiManager : MonoBehaviour
         {
             IsKey = true;
         }
+        else
+        {
+            IsKey = false;
+        }
         if(IsKey)
         {
             if(Input.GetKeyDown(KeyCode.Space))
             {
-                //
+
                 textWriter.RenderMessage();
-                //if(textWriter.IsAlreadyRead())
+                //if (textWriter.IsAlreadyRead())
                 //{
-                    keyItem.itemGetFlag = true;
-                    //textWriter.SetAlreadyRead(false);
-                    Destroy(gameObject);
+                    //keyItem.itemGetFlag = true;
+                    //Destroy(gameObject);
+                //    textWriter.SetAlreadyRead(false);
                 //}
                 //ItemFlag.SetItem(true, ItemFlag.Item.Key);
                 //keyItem.SetItem(true, ItemFlag.Item.Key);
             }
         }
+        Debug.Log(IsKey);
+        if (textWriter.IsAlreadyRead())
+        {
+            keyItem.itemGetFlag = true;
+            Destroy(gameObject);
+            textWriter.SetAlreadyRead(false);
+        }
+
     }
 }
