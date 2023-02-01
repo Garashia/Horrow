@@ -10,6 +10,11 @@ public class Item : ScriptableObject
     public Sprite sprite; // ‰æ‘œ(’Ç‰Á)
     public bool itemGetFlag = false;
 
+    //private void Awake()
+    //{
+    //    itemGetFlag = false;
+    //}
+
     public enum Type
     {
         Key, Cup, Flashlight, Hammer, Magnifying_Glass, Battery, Memo
@@ -26,5 +31,10 @@ public class Item : ScriptableObject
     public bool GetItemFlag()
     {
         return this.itemGetFlag;
+    }
+
+    public void SetItemFlag(bool itemFlag)
+    {
+        itemGetFlag = itemFlag;
     }
 }

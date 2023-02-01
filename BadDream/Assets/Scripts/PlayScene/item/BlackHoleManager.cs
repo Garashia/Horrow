@@ -85,7 +85,7 @@ public class BlackHoleManager : MonoBehaviour
             butteryGet.SetAlreadyRead(false);
         if (hammarGet.IsAlreadyRead())
         {
-            butteryItem.itemGetFlag = true;
+            butteryItem.SetItemFlag(true);
             hammarGet.SetAlreadyRead(false);
         }
         if (grassGet.IsAlreadyRead())

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HosiManager : MonoBehaviour
+public class NotKey : MonoBehaviour
 {
     private bool IsKey;
     private GameObject playerObject;
@@ -10,13 +10,18 @@ public class HosiManager : MonoBehaviour
     private Item keyItem;
 
     [SerializeField]
-    private TextWriter textWriter;
+    private TextWriter notKey;
+    [SerializeField]
+    private TextWriter haveKey;
+
+    [SerializeField]
+    private GameObject door;
 
     [SerializeField]
     private float size;
 
     [SerializeField]
-    private DestroyFlag isDead;
+    private DestroyFlag isDad;
 
     // Start is called before the first frame update
     void Start()
@@ -25,16 +30,19 @@ public class HosiManager : MonoBehaviour
         playerObject = GameObject.FindWithTag("Player");
     }
 
-    private void Update()
+    // Update is called once per frame
+    void Update()
     {
-        if (isDead.GetDestroyFlag())
+        if(isDad.GetDestroyFlag())
         {
+            door.SetActive(true);
             Destroy(gameObject);
+            //return;
         }
         else
         {
 
-
+            
             if (playerObject.transform.position.x - size < transform.position.x &&
                 playerObject.transform.position.x + size > transform.position.x)
             {
@@ -44,31 +52,31 @@ public class HosiManager : MonoBehaviour
             {
                 IsKey = false;
             }
-            if (IsKey)
+            if(IsKey)
             {
-                if (Input.GetKeyDown(KeyCode.Space))
+                if(Input.GetKeyDown(KeyCode.Space))
+                if(keyItem.GetItemFlag())
                 {
-
-                    textWriter.RenderMessage();
-                    //if (textWriter.IsAlreadyRead())
-                    //{
-                    //keyItem.itemGetFlag = true;
-                    //Destroy(gameObject);
-                    //    textWriter.SetAlreadyRead(false);
-                    //}
-                    //ItemFlag.SetItem(true, ItemFlag.Item.Key);
-                    //keyItem.SetItem(true, ItemFlag.Item.Key);
+                    haveKey.RenderMessage();
                 }
+                else
+                {
+                    notKey.RenderMessage();
+                }
+
             }
-            Debug.Log(IsKey);
-            if (textWriter.IsAlreadyRead())
+
+            if(haveKey.IsAlreadyRead())
             {
+                door.SetActive(true);
                 Destroy(gameObject);
-                textWriter.SetAlreadyRead(false);
-                isDead.isDead = true;
-                keyItem.SetItemFlag(true);
+                isDad.isDead = true;
+                haveKey.SetAlreadyRead(false);
+            }
+            if(notKey.IsAlreadyRead())
+            {
+                notKey.SetAlreadyRead(false);
             }
         }
     }
-    
 }

@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 472329acd11f3ca4eb43ed2dad303096, type: 3}
-  m_Name: Key
+  m_Script: {fileID: 11500000, guid: a8695abc944f55145a02449c58264ecf, type: 3}
+  m_Name: Door
   m_EditorClassIdentifier: 
-  type: 0
-  infomation: "\u9375"
-  sprite: {fileID: 21300000, guid: 6de6ffdc01b4dbb40b0fc964fb035814, type: 3}
-  itemGetFlag: 0
+  isDead: 0
