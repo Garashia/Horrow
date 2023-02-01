@@ -13,6 +13,9 @@ public class RoomScene2Change : MonoBehaviour
     [SerializeField]
     private CupManager cupManager;
 
+    [SerializeField]
+    private DestroyFlag room1;
+
     // Update is called once per frame
     void Update()
     {
@@ -23,6 +26,7 @@ public class RoomScene2Change : MonoBehaviour
         }
         if(cupManager.IsExamie())
         {
+            room1.isDead = false;
             fade.FadeIn(1f, () => SceneManager.LoadScene("RoomScene1"));
             cupManager.SetExamie(false);        // ”ñ“¯Šúˆ—ŒÌ‚ÉA‰i‰“‚Ìtrue‚ğ”ğ‚¯‚é
         }

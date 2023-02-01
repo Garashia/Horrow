@@ -2,35 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoxManager : MonoBehaviour
+public class FinalObjectManager : MonoBehaviour
 {
     [SerializeField]
-    private TextWriter notHammer;
+    private TextWriter notItem;
     [SerializeField]
-    private TextWriter haveHammer;
+    private TextWriter haveFlashLight;
     [SerializeField]
-    private TextWriter afterBreak;
+    private TextWriter haveButtery;
 
     [SerializeField]
-    private Item hammer;
+    private Item flashLight;
 
     [SerializeField]
-    private Item flashLifht;
+    private Item buttery;
 
     [SerializeField]
     private float size;
 
-    [SerializeField]
-    private GameObject box;
-
-    [SerializeField]
-    private GameObject boxDead;
-
-    [SerializeField]
-    private DestroyFlag isBox;
-
     private bool near;
     private GameObject playerObject;
+    private bool clearFlag;
 
     public float Size { get => size; set => size = value; }
 
@@ -39,16 +31,12 @@ public class BoxManager : MonoBehaviour
     {
         playerObject = GameObject.FindWithTag("Player");
         near = false;
+        clearFlag = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(isBox.GetDestroyFlag())
-        {
-            box.SetActive(false);
-            boxDead.SetActive(true);
-        }
         if (playerObject.transform.position.x - Size < transform.position.x &&
             playerObject.transform.position.x + Size > transform.position.x)
         {
@@ -61,33 +49,41 @@ public class BoxManager : MonoBehaviour
         if (near)
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                if (flashLifht.GetItemFlag())
+                if (flashLight.GetItemFlag())
                 {
-                    afterBreak.RenderMessage();
-                }
-                else if (hammer.GetItemFlag())
-                {
-                    haveHammer.RenderMessage();
+                    if (buttery.GetItemFlag())
+                        haveButtery.RenderMessage();
+                    else
+                        haveFlashLight.RenderMessage();
                 }
                 else
                 {
-                    notHammer.RenderMessage();
+                    notItem.RenderMessage();
                 }
             }
-        if (afterBreak.IsAlreadyRead())
+        if (haveButtery.IsAlreadyRead())
         {
-            afterBreak.SetAlreadyRead(false);
+            clearFlag = true;
+            haveButtery.SetAlreadyRead(false);
         }
-        if (haveHammer.IsAlreadyRead())
+        if (haveFlashLight.IsAlreadyRead())
         {
-            flashLifht.itemGetFlag = true;
-            isBox.isDead = true;
-            haveHammer.SetAlreadyRead(false);
+            haveFlashLight.SetAlreadyRead(false);
         }
-        if(notHammer.IsAlreadyRead())
+        if (notItem.IsAlreadyRead())
         {
-            notHammer.SetAlreadyRead(false);
+            notItem.SetAlreadyRead(false);
         }
 
     }
+
+    public bool GetClearFlag()
+    {
+        return clearFlag;
+    }
+    public void SetClearFlag(bool afterClear)
+    {
+        clearFlag = afterClear;
+    }
+
 }

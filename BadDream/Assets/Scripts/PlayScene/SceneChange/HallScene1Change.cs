@@ -13,6 +13,13 @@ public class HallScene1Change : MonoBehaviour
     [SerializeField]
     private DoorOpen door;
 
+    [SerializeField]
+    private FinalObjectManager finalObjectManager;
+
+    [SerializeField]
+    private DestroyFlag room1;
+
+
     // Update is called once per frame
     void Update()
     {
@@ -23,8 +30,14 @@ public class HallScene1Change : MonoBehaviour
         }
         else if(door.GetFlag())
         {
+            room1.isDead = true;
             fade.FadeIn(1f, () => SceneManager.LoadScene("RoomScene1"));
             door.SetFlag(false);        // ”ñ“¯Šúˆ—ŒÌ‚ÉA‰i‰“‚Ìtrue‚ğ”ğ‚¯‚é
+        }
+        else if(finalObjectManager.GetClearFlag())
+        {
+            fade.FadeIn(1f, () => SceneManager.LoadScene("End"));
+            finalObjectManager.SetClearFlag(false);        // ”ñ“¯Šúˆ—ŒÌ‚ÉA‰i‰“‚Ìtrue‚ğ”ğ‚¯‚é
         }
     }
 

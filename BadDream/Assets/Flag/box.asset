@@ -9,10 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 472329acd11f3ca4eb43ed2dad303096, type: 3}
-  m_Name: Battery
+  m_Script: {fileID: 11500000, guid: a8695abc944f55145a02449c58264ecf, type: 3}
+  m_Name: box
   m_EditorClassIdentifier: 
-  type: 5
-  infomation: "\u96FB\u6C60"
-  sprite: {fileID: 21300000, guid: 831857b9e676f57468a79e92789d5d26, type: 3}
-  itemGetFlag: 1
+  isDead: 0

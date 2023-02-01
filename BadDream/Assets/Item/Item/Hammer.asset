@@ -15,3 +15,4 @@ MonoBehaviour:
   type: 3
   infomation: "\u30CF\u30F3\u30DE\u30FC"
   sprite: {fileID: 21300000, guid: e3755da13f11b104b9fd03ef91f0fc15, type: 3}
+  itemGetFlag: 1
