@@ -69,18 +69,18 @@ public class BlackHoleManager : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 IsActive = false;
-                if (butteryItem.GetItemFlag())
+                if (butteryItem.GetItemFlag() && hammerItem.GetItemFlag())
                 {
-                    butteryGet.RenderMessage();
+                    hammarGet.RenderMessage();
                     //if (butteryGet.IsAlreadyRead())
                     //    butteryGet.SetAlreadyRead(false);
                 }
-                else if (hammerItem.GetItemFlag())
+                else if (butteryItem.GetItemFlag())
                 {
-                    hammarGet.RenderMessage();
+                    butteryGet.RenderMessage();
                     //if (hammarGet.IsAlreadyRead())
                     //{
-                        //butteryItem.itemGetFlag = true;
+                    //butteryItem.itemGetFlag = true;
                     //    hammarGet.SetAlreadyRead(false);
                     //}
                 }
