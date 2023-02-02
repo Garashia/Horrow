@@ -289,6 +289,34 @@ PrefabInstance:
       propertyPath: message.Array.data[1]
       value: "\u3060\u304C...\u6697\u304F\u3066\u3088\u304F\u5206\u304B\u3089\u306A\u3044..."
       objectReference: {fileID: 0}
+    - target: {fileID: 8040612811566480016, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 816
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040612811566480016, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 335
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040612811566480016, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.000012398
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040612811566480016, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 83.750015
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040612811858059829, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1090.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040612811858059829, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 8040612811858059829, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 118
+      objectReference: {fileID: 0}
     - target: {fileID: 8040612812356889218, guid: a95b5e5aac740424d89307e3f40ae416, type: 3}
       propertyPath: m_Name
       value: text
@@ -1373,7 +1401,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909389750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.443329, y: -0.090004206, z: -10}
+  m_LocalPosition: {x: 4.443329, y: -0.090004444, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

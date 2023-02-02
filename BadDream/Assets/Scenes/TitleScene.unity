@@ -200,7 +200,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 84440336}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.08, y: -0.0155, z: 0}
+  m_LocalPosition: {x: 2.35, y: -0.0155, z: 0}
   m_LocalScale: {x: 1.1089919, y: 1.1089919, z: 1.1089919}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -296,7 +296,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.01, y: -2.39}
+  m_AnchoredPosition: {x: 1.26, y: -2.39}
   m_SizeDelta: {x: 5.07, y: 1.76}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129380206
@@ -426,7 +426,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 1.27, y: 0, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -614,7 +614,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541633321}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.71, y: -0.0155, z: 0}
+  m_LocalPosition: {x: 8.98, y: -0.0155, z: 0}
   m_LocalScale: {x: 1.1089919, y: 1.1089919, z: 1.1089919}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -631,7 +631,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1171445580}
   - component: {fileID: 1171445579}
-  - component: {fileID: 1171445581}
   m_Layer: 0
   m_Name: Title1
   m_TagString: Untagged
@@ -699,25 +698,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171445578}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48067927, y: 2.0558162, z: 0}
+  m_LocalPosition: {x: 1.7506793, y: 2.0558162, z: 0}
   m_LocalScale: {x: 1.4, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1171445581
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1171445578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526d1e12df1ad1342896f14ad93fded4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1423430172
 GameObject:
   m_ObjectHideFlags: 0
@@ -795,7 +782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1423430172}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.96, y: -2.69, z: 0}
+  m_LocalPosition: {x: -1.1, y: -2.69, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -879,7 +866,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594935346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.5458, y: -0.0155, z: 0}
+  m_LocalPosition: {x: -4.2758, y: -0.0155, z: 0}
   m_LocalScale: {x: 1.1089919, y: 1.1089919, z: 1.1089919}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1032,7 +1019,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2025859466}
   - component: {fileID: 2025859465}
-  - component: {fileID: 2025859467}
   m_Layer: 0
   m_Name: Title2
   m_TagString: Untagged
@@ -1100,22 +1086,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025859464}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.461, y: 2.04, z: 0}
+  m_LocalPosition: {x: 1.731, y: 2.04, z: 0}
   m_LocalScale: {x: 1.4325012, y: 1.3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2025859467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2025859464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526d1e12df1ad1342896f14ad93fded4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
