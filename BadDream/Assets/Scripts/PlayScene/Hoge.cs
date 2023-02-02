@@ -8,7 +8,7 @@ public class Hoge : MonoBehaviour
     [SerializeField] private DestroyFlag flag;
     private void Start()
     {
-        flag.isDead = false;
+        flag.SetDestroyFlag(false);
         fade.FadeOut(1f);
     }
 }

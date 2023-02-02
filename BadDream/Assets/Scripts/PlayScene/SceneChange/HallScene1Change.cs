@@ -30,7 +30,7 @@ public class HallScene1Change : MonoBehaviour
         }
         else if(door.GetFlag())
         {
-            room1.isDead = true;
+            room1.SetDestroyFlag(true);
             fade.FadeIn(1f, () => SceneManager.LoadScene("RoomScene1"));
             door.SetFlag(false);        // ”ñ“¯Šúˆ—ŒÌ‚ÉA‰i‰“‚Ìtrue‚ğ”ğ‚¯‚é
         }

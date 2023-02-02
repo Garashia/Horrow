@@ -59,7 +59,7 @@ public class MemoManager : MonoBehaviour
 
                 if (!IsMemo)
                 {
-                    flag.isDead = true;
+                    flag.SetDestroyFlag(true);
                     IsActive = false;
                      memo.SetActive(true);
                      IsMemo = true;
@@ -68,7 +68,7 @@ public class MemoManager : MonoBehaviour
                 
                 else
                 {
-                    flag.isDead = false;
+                    flag.SetDestroyFlag(false);
                     IsActive = true;
                      memo.SetActive(false);
                      IsMemo = false;

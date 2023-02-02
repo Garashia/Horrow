@@ -8,7 +8,7 @@ public class DestroyFlag : ScriptableObject
     //public Type type; // éÌóﬁ
     //public String infomation; // èÓïÒ
     //public Sprite sprite; // âÊëú(í«â¡)
-    public bool isDead;
+    private bool isDead;
 
     //private void Awake()
     //{
@@ -17,7 +17,12 @@ public class DestroyFlag : ScriptableObject
 
     public DestroyFlag(DestroyFlag des)
     {
-        this.isDead = des.isDead;
+        isDead = GetIsDead(des);
+    }
+
+    private static bool GetIsDead(DestroyFlag des)
+    {
+        return des.isDead;
     }
 
     public bool GetDestroyFlag()
@@ -25,8 +30,8 @@ public class DestroyFlag : ScriptableObject
         return this.isDead;
     }
 
-    //public void SetDestroyFlag(bool deadFlag)
-    //{
-    //    isDead = deadFlag;
-    //}
+    public void SetDestroyFlag(bool deadFlag)
+    {
+        isDead = deadFlag;
+    }
 }

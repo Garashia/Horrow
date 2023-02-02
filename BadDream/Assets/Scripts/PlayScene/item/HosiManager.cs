@@ -85,7 +85,7 @@ public class HosiManager : MonoBehaviour
             {
                 Destroy(gameObject);
                 textWriter.SetAlreadyRead(false);
-                isDead.isDead = true;
+                isDead.SetDestroyFlag(true);
                 keyItem.SetItemFlag(true);
             }
         }

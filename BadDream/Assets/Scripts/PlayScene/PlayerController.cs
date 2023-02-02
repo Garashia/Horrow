@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
 
     private Rigidbody2D rb;
 
-    private SpriteRenderer renderer;
+    private new SpriteRenderer renderer;
 
     [SerializeField]
     private Animator animator = null;

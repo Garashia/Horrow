@@ -12,9 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31eba3864b9cb6e4fbbfd0f1f935b1d7, type: 3}
   m_Name: flag
   m_EditorClassIdentifier: 
-  des:
-  - {fileID: 11400000, guid: d06004f1ee26c40418b8a91e4e17b063, type: 2}
-  - {fileID: 11400000, guid: e636bf1ca0f82eb44a0d56639621593d, type: 2}
-  - {fileID: 11400000, guid: 263b8feb0ee20c64492e98b3cee1c6b2, type: 2}
-  - {fileID: 11400000, guid: 695b9e012e9191847b76f55fee41bf31, type: 2}
-  - {fileID: 11400000, guid: aff8e523adba1d64b987eb5cbded1e6b, type: 2}
+  des: []

@@ -103,8 +103,8 @@ public class BoxManager : MonoBehaviour
         if (haveHammer.IsAlreadyRead())
         {
             IsActive = true;
-            flashLifht.itemGetFlag = true;
-            isBox.isDead = true;
+            flashLifht.SetItemFlag(true);
+            isBox.SetDestroyFlag(true);
             haveHammer.SetAlreadyRead(false);
         }
         if(notHammer.IsAlreadyRead())

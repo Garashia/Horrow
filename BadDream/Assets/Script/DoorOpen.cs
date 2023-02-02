@@ -72,7 +72,7 @@ public class DoorOpen : MonoBehaviour
     //}
     private void PlayTimeline()
     {
-        destroyFlag.isDead = true;
+        destroyFlag.SetDestroyFlag(true);
         playableDirector.Play();
     }
     void OnEnable()

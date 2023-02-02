@@ -14,11 +14,11 @@ public class FlagReset : MonoBehaviour
     {
         for(int i = 0; i < itemData.Length; i++)
         {
-            itemData[i].itemGetFlag = false;
+            itemData[i].SetItemFlag(false);
         }
         for (int i = 0; i < destroyFlags.Length; i++)
         {
-            destroyFlags[i].isDead = false;
+            destroyFlags[i].SetDestroyFlag(false);
         }
 
     }

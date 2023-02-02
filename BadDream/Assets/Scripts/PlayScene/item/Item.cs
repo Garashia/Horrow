@@ -8,7 +8,7 @@ public class Item : ScriptableObject
     public Type type; // í—Ş
     public String infomation; // î•ñ
     public Sprite sprite; // ‰æ‘œ(’Ç‰Á)
-    public bool itemGetFlag = false;
+    private bool itemGetFlag;
 
     //private void Awake()
     //{
@@ -25,7 +25,12 @@ public class Item : ScriptableObject
         this.type = item.type;
         this.infomation = item.infomation;
         this.sprite = item.sprite; // ‰æ‘œ(’Ç‰Á)
-        this.itemGetFlag = item.itemGetFlag;
+        this.itemGetFlag = GetItemGetFlag(item);
+    }
+
+    private static bool GetItemGetFlag(Item item)
+    {
+        return item.itemGetFlag;
     }
 
     public bool GetItemFlag()

@@ -37,7 +37,7 @@ public class TextWriter : MonoBehaviour
     // 文章を表示させるコルーチン
     IEnumerator Cotest()
     {
-        playerFlag.isDead = true;
+        playerFlag.SetDestroyFlag(true);
         for (int i = 0; i < message.Length; i++)
         {
             uitext.DrawText(message[i]);
@@ -50,7 +50,7 @@ public class TextWriter : MonoBehaviour
         uitext.DrawText("");
         yield return 0;
         messageFlag = true;
-        playerFlag.isDead = false;
+        playerFlag.SetDestroyFlag(false);
     }
 
     // 読み終わったかどうかの確認

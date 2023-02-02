@@ -93,7 +93,7 @@ public class NotKey : MonoBehaviour
                 IsActive = true;
                 door.SetActive(true);
                 Destroy(gameObject);
-                isDad.isDead = true;
+                isDad.SetDestroyFlag(true);
                 haveKey.SetAlreadyRead(false);
             }
             if(notKey.IsAlreadyRead())
