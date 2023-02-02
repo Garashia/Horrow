@@ -18,7 +18,7 @@ public class UIText : MonoBehaviour
     // クリックで次のページを表示させるための関数
     public bool IsClicked()
     {
-        if (Input.GetMouseButtonDown(0)) return true;
+        if (Input.GetKeyDown(KeyCode.Space)) return true;
         return false;
     }
 

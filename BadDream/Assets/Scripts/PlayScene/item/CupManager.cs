@@ -5,6 +5,9 @@ using UnityEngine;
 public class CupManager : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag playerFlag;
+
+    [SerializeField]
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
@@ -47,7 +50,7 @@ public class CupManager : MonoBehaviour
         {
             message.SetActive(false);
         }
-        if (IsKey)
+        if (IsKey && !playerFlag.GetDestroyFlag())
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 IsActive = false;

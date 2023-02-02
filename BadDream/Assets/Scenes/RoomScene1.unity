@@ -804,6 +804,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51b8a40028340104f98668515e9977fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
   pos: {x: 0, y: 2}
   notHammer: {fileID: 1667268740}
@@ -1499,6 +1500,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 1133109642}
   message:
   - "\u30C9\u30A2\u304C\u3042\u308B..."
@@ -1811,6 +1813,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 1396338240}
   message:
   - "\u30C9\u30A2\u304C\u9589\u307E\u3063\u3066\u3044\u308B...\u624B\u6301\u3061\u306E\u9375\u3067\u89E3\u9664\u3067\u304D\u305D\u3046"
@@ -2056,6 +2059,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 1566620279}
   message:
   - "\u3053\u3053\u306B\u306F\u3082\u3046\u306A\u306B\u3082\u306A\u3044\u3088\u3046\u3060\u3002"
@@ -2137,6 +2141,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 1656801192}
   message:
   - "\u7BB1\u304C\u3042\u308B..."
@@ -2205,6 +2210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 1667268741}
   message:
   - "\u7BB1\u304C\u3042\u308B..."
@@ -2330,6 +2336,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
     - target: {fileID: 788523873541248648, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
+      propertyPath: playerFlag
+      value: 
+      objectReference: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
+    - target: {fileID: 788523873541248648, guid: 76175af61fd206b4394a6a7b6bc1f17f, type: 3}
       propertyPath: textWriter
       value: 
       objectReference: {fileID: 1533813057}
@@ -2433,6 +2443,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 652cc3eba5e776f4b90b26aea6583bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
   pos: {x: 0, y: 1}
   keyItem: {fileID: 11400000, guid: d4ed485f0f3466c4d85a4562e6f2e8f5, type: 2}

@@ -5,6 +5,8 @@ using UnityEngine;
 public class TextWriter : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag playerFlag;
+    [SerializeField]
     private UIText uitext;
     [SerializeField]
     private string[] message;
@@ -35,10 +37,11 @@ public class TextWriter : MonoBehaviour
     // 文章を表示させるコルーチン
     IEnumerator Cotest()
     {
-        for(int i = 0; i < message.Length; i++)
+        playerFlag.isDead = true;
+        for (int i = 0; i < message.Length; i++)
         {
             uitext.DrawText(message[i]);
-            yield return StartCoroutine("Skip");
+            yield return StartCoroutine(Skip());
         }
 
         //uitext.DrawText("名前", "人が話すのならこんな感じ");
@@ -47,6 +50,7 @@ public class TextWriter : MonoBehaviour
         uitext.DrawText("");
         yield return 0;
         messageFlag = true;
+        playerFlag.isDead = false;
     }
 
     // 読み終わったかどうかの確認

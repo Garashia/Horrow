@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 8040612811485441685}
   message:
   - "\u8B0E\u306E\u30AD\u30E9\u30AD\u30E9\u3092\u8ABF\u3079\u305F\u3089..."

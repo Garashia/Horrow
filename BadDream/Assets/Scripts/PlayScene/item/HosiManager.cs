@@ -5,6 +5,9 @@ using UnityEngine;
 public class HosiManager : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag playerFlag;
+
+    [SerializeField]
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
@@ -60,7 +63,7 @@ public class HosiManager : MonoBehaviour
 
                 IsKey = false;
             }
-            if (IsKey)
+            if (IsKey && !playerFlag.GetDestroyFlag())
             {
                 if (Input.GetKeyDown(KeyCode.Space))
                 {

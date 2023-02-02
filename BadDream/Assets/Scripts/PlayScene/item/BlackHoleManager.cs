@@ -5,6 +5,8 @@ using UnityEngine;
 public class BlackHoleManager : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag playerFlag;
+    [SerializeField]
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
@@ -63,7 +65,7 @@ public class BlackHoleManager : MonoBehaviour
             message.SetActive(false);
             IsKey = false;
         }
-        if (IsKey)
+        if (IsKey && !playerFlag.GetDestroyFlag())
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 IsActive = false;

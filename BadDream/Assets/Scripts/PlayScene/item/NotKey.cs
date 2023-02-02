@@ -5,6 +5,9 @@ using UnityEngine;
 public class NotKey : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag playerFlag;
+
+    [SerializeField]
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
@@ -67,7 +70,7 @@ public class NotKey : MonoBehaviour
 
                 IsKey = false;
             }
-            if(IsKey)
+            if(IsKey && !playerFlag.GetDestroyFlag())
             {
                 if(Input.GetKeyDown(KeyCode.Space))
                 {

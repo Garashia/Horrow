@@ -609,6 +609,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 762855781}
   message:
   - "\u3053\u306E\u5148\u306B\u5ECA\u4E0B\u304C\u898B\u3048\u308B..."
@@ -729,6 +730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4d14fe84efb104ba6eb186f66b1930, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
   pos: {x: 0, y: 1}
   notItem: {fileID: 265909990}
@@ -1208,6 +1210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 148dffa26a0a5e343be361a20d4b9616, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerFlag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   uitext: {fileID: 1841456168}
   message:
   - "\u3053\u306E\u5148\u306B\u5ECA\u4E0B\u304C\u898B\u3048\u308B..."

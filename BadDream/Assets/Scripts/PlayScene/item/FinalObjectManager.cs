@@ -5,6 +5,9 @@ using UnityEngine;
 public class FinalObjectManager : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag playerFlag;
+
+    [SerializeField]
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
@@ -62,7 +65,7 @@ public class FinalObjectManager : MonoBehaviour
 
             near = false;
         }
-        if (near)
+        if (near && !playerFlag.GetDestroyFlag())
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 IsActive = false;
