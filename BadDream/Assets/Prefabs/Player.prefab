@@ -122,6 +122,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 20
   animator: {fileID: 1470318441052858803}
+  flag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
+  collider2D: {fileID: 0}
 --- !u!95 &1470318441052858803
 Animator:
   serializedVersion: 4

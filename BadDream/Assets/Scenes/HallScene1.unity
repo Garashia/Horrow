@@ -1026,6 +1026,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1470318441052858802, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
+      propertyPath: collderObj
+      value: 
+      objectReference: {fileID: 1737092681}
+    - target: {fileID: 1470318441052858802, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
+      propertyPath: collider2D
+      value: 
+      objectReference: {fileID: 576518281960319640}
     - target: {fileID: 1470318441052858804, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -1149,6 +1157,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 976987278}
+  flag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
 --- !u!66 &1839309856 stripped
 CompositeCollider2D:
   m_CorrespondingSourceObject: {fileID: 576518282440527543, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
@@ -1741,3 +1750,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+--- !u!61 &576518281960319640 stripped
+BoxCollider2D:
+  m_CorrespondingSourceObject: {fileID: 576518282440527496, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+  m_PrefabInstance: {fileID: 576518281960319639}
+  m_PrefabAsset: {fileID: 0}

@@ -229,6 +229,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1470318441052858802, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
+      propertyPath: collderObj
+      value: 
+      objectReference: {fileID: 873564266}
     - target: {fileID: 1470318441052858804, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
       propertyPath: m_SortingOrder
       value: 4
@@ -623,6 +627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 511740458}
+  flag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
 --- !u!1 &425585709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,6 +1268,11 @@ PrefabInstance:
 --- !u!66 &873564265 stripped
 CompositeCollider2D:
   m_CorrespondingSourceObject: {fileID: 576518282440527543, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+  m_PrefabInstance: {fileID: 873564264}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &873564266 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 576518282440527497, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
   m_PrefabInstance: {fileID: 873564264}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1093962197

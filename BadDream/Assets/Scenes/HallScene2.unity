@@ -536,6 +536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 1599023102}
+  flag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
 --- !u!1 &650864033
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +721,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1470318441052858802, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
+      propertyPath: collderObj
+      value: 
+      objectReference: {fileID: 1298799952}
     - target: {fileID: 1470318441052858804, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
       propertyPath: m_SortingOrder
       value: 5
@@ -1032,6 +1037,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+--- !u!1 &1298799952 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 576518282440527497, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+  m_PrefabInstance: {fileID: 1298799951}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1599023101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1336,7 +1346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909389750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.28738248, y: -0.030005336, z: -10}
+  m_LocalPosition: {x: -0.12, y: -0.030006051, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

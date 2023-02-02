@@ -5,6 +5,8 @@ using UnityEngine;
 public class MemoManager : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag flag;
+    [SerializeField]
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
@@ -57,6 +59,7 @@ public class MemoManager : MonoBehaviour
 
                 if (!IsMemo)
                 {
+                    flag.isDead = true;
                     IsActive = false;
                      memo.SetActive(true);
                      IsMemo = true;
@@ -65,6 +68,7 @@ public class MemoManager : MonoBehaviour
                 
                 else
                 {
+                    flag.isDead = false;
                     IsActive = true;
                      memo.SetActive(false);
                      IsMemo = false;

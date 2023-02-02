@@ -546,6 +546,11 @@ CompositeCollider2D:
   m_CorrespondingSourceObject: {fileID: 576518282440527543, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
   m_PrefabInstance: {fileID: 446487689}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &446487691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 576518282440527497, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+  m_PrefabInstance: {fileID: 446487689}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &509679211
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -789,6 +794,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 716cff439da72684c86940b990d29443, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
   message: {fileID: 4017305708029735357, guid: 2987c7600599d9447aaba6a1e0bc6b09, type: 3}
   pos: {x: 0, y: 3}
   memo: {fileID: 1660865047}
@@ -988,6 +994,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1470318441052858802, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
+      propertyPath: collderObj
+      value: 
+      objectReference: {fileID: 446487691}
     - target: {fileID: 1470318441052858804, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
       propertyPath: m_SortingOrder
       value: 4
@@ -1364,6 +1374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 1851057331}
+  flag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
 --- !u!1001 &1394523413
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1709,7 +1720,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1909389750}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.23999904, y: 0.04999435, z: -10}
+  m_LocalPosition: {x: 0.23999761, y: 0.04999435, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

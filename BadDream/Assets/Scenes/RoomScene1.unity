@@ -316,6 +316,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+--- !u!1 &174468879 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 576518282440527497, guid: 61c2eb19dd6d8ec4a94124e7829eb84a, type: 3}
+  m_PrefabInstance: {fileID: 174468878}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &267117516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2378600090719224510, guid: e4a0afe66a9cc4c49821d3b8521deeeb, type: 3}
@@ -436,6 +441,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fade: {fileID: 87758007}
+  flag: {fileID: 11400000, guid: f03a09614313895489e5d6ff50b4cf4c, type: 2}
 --- !u!4 &506542751
 Transform:
   m_ObjectHideFlags: 0
@@ -543,7 +549,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0542016, y: -0.030006766, z: -10}
+  m_LocalPosition: {x: -0.94164896, y: -0.030006766, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1706,6 +1712,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1470318441052858802, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
+      propertyPath: collderObj
+      value: 
+      objectReference: {fileID: 174468879}
     - target: {fileID: 1470318441052858804, guid: 5ac53d4a7b62871408088d49cc70d921, type: 3}
       propertyPath: m_SortingOrder
       value: 3

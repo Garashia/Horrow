@@ -6,6 +6,8 @@ using UnityEngine.Playables; //TimelineÇÃêßå‰Ç…ïKóv
 public class DoorOpen : MonoBehaviour
 {
     [SerializeField]
+    private DestroyFlag destroyFlag;
+    [SerializeField]
     private GameObject message;
     [SerializeField]
     private Vector2 pos;
@@ -70,6 +72,7 @@ public class DoorOpen : MonoBehaviour
     //}
     private void PlayTimeline()
     {
+        destroyFlag.isDead = true;
         playableDirector.Play();
     }
     void OnEnable()
