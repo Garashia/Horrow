@@ -59,6 +59,7 @@ public class BoxManager : MonoBehaviour
     {
         if(isBox.GetDestroyFlag())
         {
+            Destroy(gameObject);
             box.SetActive(false);
             boxDead.SetActive(true);
         }
@@ -105,6 +106,7 @@ public class BoxManager : MonoBehaviour
             IsActive = true;
             flashLifht.SetItemFlag(true);
             isBox.SetDestroyFlag(true);
+            Destroy(gameObject);
             haveHammer.SetAlreadyRead(false);
         }
         if(notHammer.IsAlreadyRead())
